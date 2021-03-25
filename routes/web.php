@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PDFController;
+use App\Http\Controllers\htmlPDFController;
 use App\Http\Controllers\EmployeeController;
 
 /*
@@ -42,3 +42,5 @@ Route::get('/download/{pdfID}', function ($pdfID) {
             $pdf = PDF::loadFile($path);
             return $pdf->download($pdfID. '.pdf');
 });
+
+Route::get('/index', 'App\Http\Controllers\EmployeeController@showEmployees');

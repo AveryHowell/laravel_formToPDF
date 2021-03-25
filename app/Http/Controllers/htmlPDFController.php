@@ -6,5 +6,5 @@ use App\Models\htmlPDF;
 use PDF;
 
 class htmlPDFController extends Controller {
-
+    
 }
