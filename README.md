@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="ss.png" width="400"></a></p>
+<img src="ss.png" width="400"/>
 
 <p>Building with Laravel, Docker, DOMPDF, and MySQL</p>
 
