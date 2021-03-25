@@ -1,9 +1,9 @@
 <?php
 
-namespace App\models;
+namespace App;
 use Illuminate\Database\Eloquent\Model;
 
-class htmlPDF extends Model {
+class Employee extends Model {
 
     public $fillable = ['name', 'email', 'phone_number', 'dob'];
 
