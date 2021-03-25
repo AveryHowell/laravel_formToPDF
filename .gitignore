@@ -11,3 +11,16 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+/app
+/bootstrap
+/storage
+/tests
+.editorconfig
+.env.example
+.gitattributes
+.gitignore
+.styleci.yml
+artisan
+composer.json
+composer.lock
+create
