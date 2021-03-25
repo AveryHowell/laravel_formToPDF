@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\htmlPDFController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +45,7 @@ Route::get('/download/{pdfID}', function ($pdfID) {
 });
 
 Route::get('/index', 'App\Http\Controllers\EmployeeController@showEmployees');
+
+Route::get('/form', 'App\Http\Controllers\FormController@myform');
+
+Route::post('/submitmyform', 'App\Http\Controllers\FormController@submitmyform');
