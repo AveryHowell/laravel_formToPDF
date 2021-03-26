@@ -17,9 +17,10 @@ class FormController extends Controller {
             //Database insertion code starts
             $name = $request->input('name');                                  
             $email = $request->input('email');
-            $age = $request->input('age');
-            $data=array('name'=>$name,"email"=>$email,"age"=>$age);
-            DB::table('employees')->insert($data);                            
+            $phone_number = $request->input('phone_number');
+            $dob = $request->input('dob');
+            $data=array('name'=>$name,"email"=>$email,"phone_number"=>$phone_number, "dob"=>$dob);
+            Employee::where('name', $name)->insert($data);                            
             //Database insertion code ends    
             
             die("Form Submitted"); 
