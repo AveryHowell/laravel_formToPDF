@@ -22,7 +22,7 @@ class FormController extends Controller {
             $data=array('name'=>$name,"email"=>$email,"phone_number"=>$phone_number, "dob"=>$dob);
             Employee::where('name', $name)->insert($data);                            
             //Database insertion code ends    
-            
+            echo '<a class="btn btn-primary" href="index">Go To Table</a><br>';
             die("Form Submitted"); 
         }
     }

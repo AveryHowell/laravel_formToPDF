@@ -11,10 +11,10 @@
 
 <body>
     <div class="container mt-5">
-        <h2 class="text-center mb-3">Laravel HTML to PDF Example</h2>
+        <h2 class="text-center mb-3">MySQL Database Table "Employee"</h2>
 
         <div class="d-flex justify-content-end mb-4">
-            <a class="btn btn-primary" href="{{ URL::to('#') }}">Export to PDF</a>
+            <a class="btn btn-primary" href="{{ URL::to('form') }}">Add New Employee</a>
         </div>
 
         <table class="table table-bordered mb-5">
@@ -36,6 +36,7 @@
                     <td>{{ $data->phone_number }}</td>
                     <td>{{ $data->dob }}</td>
                 </tr>
+                <input type="hidden" name="custId" value="{{ $data->id }}"> 
                 @endforeach
             </tbody>
         </table>
