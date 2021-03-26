@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="py-5">
     <div class="container mt-5">
         <h2 class="text-center mb-3">MySQL Database Table "Employee"</h2>
 
